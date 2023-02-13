@@ -34,7 +34,7 @@ export default function Corousel(props) {
                          />
                     ) : (
                          <>
-                              <div className="ml-4 ">
+                              <div className="ml-2">
                                    <img src="icons/arrow_back.png" className="cursor-pointer" onClick={prev} alt="" />
                               </div>
                               <div>

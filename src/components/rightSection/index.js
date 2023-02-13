@@ -18,7 +18,7 @@ export default function RightSection(props) {
           props.setImageData(props?.fullData?.solids?.red);
      };
      return (
-          <div className="container pl-10">
+          <div className="container pl-4">
                <div>
                     <div className="pt-10">
                          <h1 className="font-bold text-6xl pb-3">{props?.fullData?.name}</h1>
