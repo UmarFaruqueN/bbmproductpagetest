@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Corousel, RightSection } from "./components";
+import data from "./utlis/data/data.json";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+     const [imagedata, setImageData] = useState(data?.solids?.white);
+
+     // const imagesdata = ["images/image111.webp", "images/image222.webp", "images/image333.webp"];
+     // //const imagesdata = false
+
+     return (
+          <div className="grid grid-cols-1  lg:grid-cols-2 gap-2">
+               <div className="h-screen">
+                    <Corousel images={imagedata} />
+               </div>
+               <div className="h-screen">
+                    <RightSection fullData={data} setImageData={setImageData} />
+               </div>
+          </div>
+     );
 }
 
 export default App;

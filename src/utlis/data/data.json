@@ -1,0 +1,11 @@
+{
+     "name": "Men’s Trunk",
+     "price": 499,
+     "discount": 20,
+     "solids": {
+          "white": ["images/image1.webp", "images/image2.webp", "images/image3.webp"],
+          "black": ["images/image11.webp", "images/image22.webp", "images/image33.webp"],
+          "red": ["images/image111.webp", "images/image222.webp", "images/image333.webp"]
+     },
+     "types": ["Brief", "Mini-Trunk", "Long-Trunk"]
+}
