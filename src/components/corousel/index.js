@@ -39,7 +39,7 @@ export default function Corousel(props) {
                               </div>
                               <div>
                                    {" "}
-                                   <img src={props.images[index]} className=" h-3/4 w-5/5" alt="" />
+                                   <img src={props.images[index]} className=" h-[80vh] w-5/5" alt="" />
                               </div>
                               <div className="">
                                    <img src="icons/arrow_front.png" alt="" className="cursor-pointer" onClick={next} />
